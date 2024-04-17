@@ -6,7 +6,7 @@ function Navbar() {
   console.log(count);
   return (
     <div className="navbar">
-      <h2>Value {count}</h2>
+      <h2>Counter : {count}</h2>
     </div>
   );
 }
