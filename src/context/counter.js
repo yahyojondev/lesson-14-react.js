@@ -6,12 +6,15 @@ export const counterSlice = createSlice({
     value: 99,
   },
   reducers: {
-    inc: (state) => {
-      state.value += 1;
+    inc: (state, actions) => {
+      state.value += actions.payload;
+    },
+    dec(state, actions) {
+      state.value -= actions.payload;
     },
   },
 });
 
-export const { inc } = counterSlice.actions;
+export const { inc, dec } = counterSlice.actions;
 
 export default counterSlice.reducer;

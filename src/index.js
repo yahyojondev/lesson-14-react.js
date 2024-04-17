@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import "./sass/main.scss";
 // redux-toolkit //
 import { store } from "./context/store";
 import { Provider } from "react-redux";

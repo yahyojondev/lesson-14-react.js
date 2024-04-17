@@ -1,13 +1,18 @@
 import React from "react";
-import { inc } from "../../context/counter";
+import { inc, dec } from "../../context/counter";
 import { useDispatch } from "react-redux";
 
 function Main() {
   const dispatch = useDispatch();
   return (
     <div>
-      <h2>Main</h2>
-      <button onClick={() => dispatch(inc())}>decrement</button>
+      <div className="forms">
+        <input type="number" />
+        <button onClick={() => dispatch(inc(1))}>increment 1</button>
+        <br />
+        <input type="number" />
+        <button onClick={() => dispatch(dec(1))}>decrement 1</button>
+      </div>
     </div>
   );
 }
