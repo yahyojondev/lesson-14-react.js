@@ -19,3 +19,23 @@
   justify-content: center;
   flex-direction: column;
 }
+h2 {
+  color: white;
+  font-size: 30px;
+}
+input {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  width: 250px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+}

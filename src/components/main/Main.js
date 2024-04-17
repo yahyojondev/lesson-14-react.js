@@ -1,5 +1,5 @@
 import React from "react";
-import { inc, dec } from "../../context/counter";
+import { inc, dec, thero } from "../../context/counter";
 import { useDispatch } from "react-redux";
 
 function Main() {
@@ -12,6 +12,7 @@ function Main() {
         <br />
         <input type="number" />
         <button onClick={() => dispatch(dec(1))}>decrement 1</button>
+        <button onClick={() => dispatch(thero(0))}>Reset</button>
       </div>
     </div>
   );
